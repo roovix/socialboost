@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roovix Social Boost - Boost Your Social Presence</title>
+
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link to css -->
+     <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><img src="images/roovix buy socvial followers fav icon 120.png" alt="Roovix Social Boost Logo"><span>SocialBoost</span></div>
+                <button id="nav_toggle"><i id="nav_toggle_icon" class="fa-solid fa-bars-staggered"></i></button>
+                <div class="nav-links">
+                    <a href="#services">Services</a>
+                    <a href="#services">Boost Social Profile</a>
+                    <a href="#services">Buy Social likes</a>
+                    <a href="#services">Boost Social Engagement</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Boost Your Social Presence</h1>
+            <p>Get more followers, likes, and views for your social media accounts.
+                <br>Powered by 100% trusted site, Roovix.</p>
+            <a href="#services" class="cta-button">Buy Now</a>
+        </div>
+    </section>
+
+    <section class="introduce-our-service">
+        <div class="container">
+            <!-- This commented code will be show after some times -->
+            <!-- <div class="metrics">
+                <div class="metric primary">★ 15000+</div>
+                <div class="metric">4.8+</div>
+            </div> -->
+    
+            <h1>Boost Your <span>Social Growth</span></h1>
+    
+            <div class="features-card">
+                <div class="feature">Authentic engagement from real users</div>
+                <div class="feature">Flexible packages for all budget sizes</div>
+                <div class="feature">Fast delivery within 24 hours</div>
+                <div class="feature">Best competitive prices in the market</div>
+                <div class="feature">24/7 customer support</div>
+                <div class="feature">Guaranteed account security and privacy</div>
+    
+                <a href="#" class="cta-button">Buy Now</a>
+            </div>
+    
+            <div class="info-grid">
+                <div class="info-card">
+                    <h2>Why is Social Growth Important?</h2>
+                    <p>In today's digital landscape, building a strong social media presence is crucial. Higher engagement rates lead to better visibility, increased credibility, and more opportunities for your brand or content.</p>
+                </div>
+                <div class="info-card">
+                    <h2>Benefits of Our Services</h2>
+                    <p>Our platform provides organic growth solutions that help you effectively reach your target audience. We focus on quality engagement that drives real results for your social media success.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i style="color: #ff6b6b;" class="fa-brands fa-youtube"></i></div>
+                    <h3>YouTube</h3>
+                    <p>Increase views and subscriber count for your videos</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i style="color: #4372E6;" class="fa-brands fa-facebook"></i></div>
+                    <h3>Facebook</h3>
+                    <p>Boost likes, post engagement, and followers for your page</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i style="color: #E818A3;" class="fa-brands fa-instagram"></i></div>
+                    <h3>Instagram</h3>
+                    <p>Get more followers and likes on your photos</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-brands fa-tiktok"></i></div>
+                    <h3>TikTok</h3>
+                    <p>Increase views and follower count for your videos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Skyrocket Your Social Media?</h2>
+            <p>Join thousands of satisfied customers and see the difference today!</p>
+            <a href="#" class="cta-button">Get Started Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <iframe 
+            id="dynamic-iframe" 
+            src="footer.html" 
+            width="100%" 
+            frameborder="0" 
+            scrolling="no" 
+            style="border: 0; overflow: hidden;">
+        </iframe>
+    </footer>
+    
+    <!-- Footer script -->
+     <script>
+        // Footer JavaScript
+        // Adjust iframe height based on its content
+        const iframe = document.getElementById('dynamic-iframe');
+        iframe.addEventListener('load', () => {
+            try {
+                // Get the content height from the iframe's document
+                const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
+                iframe.style.height = `${iframeContentHeight}px`;
+            } catch (error) {
+                console.error('Unable to access iframe content for height adjustment:', error);
+            }
+        });
+     </script>
+
+    <!-- Nav bar responsive for phone screen -->
+    <script>
+        // Nav bar responsive for phone screen
+        const nav_toggle = document.querySelector('#nav_toggle');
+        const nav_links = document.querySelector('.nav-links');
+        const nav_toggle_icon = document.querySelector('#nav_toggle_icon');
+
+        nav_toggle.addEventListener('click', () => {
+            if (nav_links.style.display === 'flex') {
+                nav_links.style.display = 'none';
+                nav_toggle_icon.classList.remove('fa-xmark');
+                nav_toggle_icon.classList.add('fa-bars-staggered');
+            } else {
+                nav_links.style.display = 'flex';
+                nav_toggle_icon.classList.add('fa-xmark');
+                nav_toggle_icon.classList.remove('fa-bars-staggered');
+            }
+        });
+    </script>
+</body>
+</html>
