@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav_toggle {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: none;
+    font-size: 1.5rem;
+}
+.nav_toggle_style {
+    display: none;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff3366;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo img {
+    width: 50px;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff3366;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(45deg, #ff3366, #ff6b6b);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.2s;
+}
+
+.pink-cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #ff3366;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease 0.4s;
+}
+
+.pink-cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(255, 51, 102, 0.3);
+}
+
+.services {
+    padding: 100px 0;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px) rotateY(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.cta-section {
+    background-color: #ff3366;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Social media tools */
+.social-media-tools {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+.tools-header {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.tools-header span{
+    color: #d32f2f;
+}
+
+.tool-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tool-card {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tool-icon svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+    fill: #cc0000;
+}
+
+.tool-title {
+    font-size: 1.2rem;
+    color: #d32f2f;
+    margin: 10px 0;
+}
+
+.tool-description {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+/* Unique styles for Introduce Our Service Section */
+.introduce-our-service {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.introduce-our-service .metrics {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.introduce-our-service .metric {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.introduce-our-service .metric.primary {
+    background: #e1fff0;
+    color: #00b894;
+}
+
+.introduce-our-service h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.introduce-our-service h1 span {
+    color: #e74c3c;
+}
+
+.introduce-our-service .features-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.introduce-our-service .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.introduce-our-service .feature::before {
+    content: "✓";
+    color: #e74c3c;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+.introduce-our-service .cta-button {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.introduce-our-service .cta-button:hover {
+    background: #c0392b;
+}
+
+.introduce-our-service .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.introduce-our-service .info-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.introduce-our-service .info-card h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.introduce-our-service .info-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* TikTok Boost section */
+.tiktok-section {
+    background: linear-gradient(135deg, #bde3f2 0%, #e8f4f8 100%);
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    margin-top: 30px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.tiktok-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.rating-badge {
+    background: white;
+    border-radius: 50px;
+    padding: 8px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.rating-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #00a884;
+}
+
+.main-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.highlight {
+    color: #ff2c55;
+}
+
+.features-list {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.8) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    background: #00a884;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.cta-button {
+    background: #1a8cff;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #0066cc;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.info-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.info-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.tiktok-logo {
+    position: absolute;
+    top: 35%;
+    right: -100px;
+    transform: translateY(-50%);
+    width: 800px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* .tiktok-logo {
+        display: none;
+    } */
+}
+
+/* Youtube Boost section */
+.yt-boost-section {
+    background: linear-gradient(135deg, #ffe5e5 0%, #fff5f5 100%);
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    margin-top: 30px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.yt-boost-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.yt-stats-badge {
+    background: white;
+    border-radius: 50px;
+    padding: 8px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.yt-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #00a884;
+}
+
+.yt-main-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.yt-highlight {
+    color: #ff0000;
+}
+
+.yt-features-list {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.8) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.yt-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.yt-checkmark {
+    width: 20px;
+    height: 20px;
+    background: #ff0000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: white;
+}
+
+.yt-cta-button {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.yt-cta-button:hover {
+    background: #cc0000;
+}
+
+.yt-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.yt-info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.yt-info-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.yt-info-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.yt-logo {
+    position: absolute;
+    top: 35%;
+    right: -100px;
+    transform: translateY(-50%);
+    rotate: 45deg;
+    width: 800px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .yt-info-grid {
+        grid-template-columns: 1fr;
+    }
+/*     
+    .yt-logo {
+        display: none;
+    } */
+}
+
+/* Facebook Boost section */
+.fb-boost-section {
+    background: linear-gradient(135deg, #e7f3ff 0%, #f5faff 100%);
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+    margin-top: 30px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.fb-boost-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.fb-stats-badge {
+    background: white;
+    border-radius: 50px;
+    padding: 8px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.fb-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #4267B2;
+}
+
+.fb-main-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.fb-highlight {
+    color: #4267B2;
+}
+
+.fb-features-list {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.8) 100%);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+    max-width: 600px;
+}
+
+.fb-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.fb-checkmark {
+    width: 20px;
+    height: 20px;
+    background: #4267B2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: white;
+}
+
+.fb-cta-button {
+    background: #4267B2;
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.fb-cta-button:hover {
+    background: #365899;
+}
+
+.fb-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.fb-info-card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.fb-info-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.fb-info-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.fb-logo {
+    position: absolute;
+    top: 35%;
+    right: -100px;
+    transform: translateY(-50%);
+    width: 800px;
+    opacity: 0.9;
+}
+.fb-logo2 {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .fb-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* .fb-logo {
+        display: none;
+    } */
+}
+
+/* Nav ber responsive */
+@media (max-width: 1080px) {
+    .nav-links {
+        font-size: 1.2rem;
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px;
+        padding-right: 20px;
+        border-radius: 10px;
+        position: absolute;
+        top: 90px;
+        right: 10px;
+        background-color: #fff;
+        box-shadow: 5px 8px 15px rgba(128, 128, 128, 0.384);
+        animation: nav_res_anim 0.2s ease-in-out;
+    }
+    #nav_toggle {
+        display: block;
+    }
+}
+@keyframes nav_res_anim {
+    from {
+        right: -300px;
+        opacity: 0;
+    }
+    to {
+        right: 10px;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1080px) {
+    .fb-logo {
+        width: 600px;
+    }
+}
+@media (max-width: 768px) {
+    .yt-logo {
+        top: 90px;
+        right: -100px;
+        rotate: 90deg;
+        width: 400px;
+    }
+    .tiktok-logo {
+        top: 50px;
+        right: -80px;
+        rotate: 70deg;
+        width: 400px;
+    }
+    .fb-logo {
+        top: 40%;
+        rotate: 180deg;
+        transform: rotateX(180deg);
+        width: 400px;
+    }
+    .fb-logo2 {
+        display: block;
+        width: 250px;
+        top: 10px;
+        opacity: 0.5;
+        filter: blur(1px);
+    }
+}
+@media (max-width: 768px) {
+    .introduce-our-service h1 {
+        font-size: 2.5rem;
+    }
+
+    .introduce-our-service .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 1340px) {
+    .fb-boost-section, .yt-boost-section, .tiktok-section{
+        margin: 10px;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roovix Social Boost - Boost Your Social Presence</title>
+
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link to css -->
+     <link rel="stylesheet" href="styles/index.css">
+     <link rel="stylesheet" href="styles/service_slider.css">
+
+     <!-- FavIcon -->
+      <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"><img src="images/logo.png" alt="Roovix Social Boost Logo"><span>SkyRocket</span></div>
+                <button id="nav_toggle"><i id="nav_toggle_icon" class="fa-solid fa-bars-staggered"></i></button>
+                <div class="nav-links">
+                    <a href="#services">Boost Social Engagement</a>
+                    <a href="#social-media-tools">Tools</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Boost Your Social Presence</h1>
+            <p>Get more followers, likes, and views for your social media accounts.
+                <br>Powered by 100% trusted site, Roovix.</p>
+            <a href="#services" class="pink-cta-button">Boost Now</a>
+        </div>
+    </section>
+
+    <section class="service-slider-container">
+        <div class="background-shape shape-1"></div>
+        <div class="background-shape shape-2"></div>
+        
+        <button class="slider-arrow prev" onclick="slideServices(-1)" aria-label="Previous services">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        
+        <div class="service-slider" id="serviceSlider">
+          <a href="#youtube" class="service-item">
+            <div class="service-icon" style="background: #ffe5e5;">
+                <!-- Youtube icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#ff0000">
+                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+              </svg>
+            </div>
+            <span class="service-name">YouTube</span>
+            <span class="service-tag tag-popular">Popular</span>
+          </a>
+
+          <a href="#facebook" class="service-item">
+            <div class="service-icon" style="background: #e6f0ff;">
+              <!-- Facebook SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#1877F2">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </div>
+            <span class="service-name">Facebook</span>
+            <span class="service-tag tag-popular">Popular</span>
+          </a>
+          
+          <a href="#instagram" class="service-item">
+            <div class="service-icon" style="background: #f0e6ff;">
+                <!-- Instagram icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#833AB4">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </div>
+            <span class="service-name">Instagram</span>
+            <span class="service-tag tag-new">New</span>
+          </a>
+          
+          <a href="#tiktok" class="service-item">
+            <div class="service-icon" style="background: #e6f0ff;">
+                <!-- TikTok icon -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#000000">
+                <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+              </svg>
+            </div>
+            <span class="service-name">TikTok</span>
+            <span class="service-tag tag-new">New</span>
+          </a>
+
+          <a href="#telegram" class="service-item">
+            <div class="service-icon" style="background: #e6f7ff;">
+              <!-- Telegram SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#229ED9">
+                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+              </svg>
+            </div>
+            <span class="service-name">Telegram</span>
+          </a>
+
+          <a href="#x" class="service-item">
+            <div class="service-icon" style="background: #f5f5f5;">
+              <!-- X (Twitter) SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#000000">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </div>
+            <span class="service-name">X</span>
+          </a>
+
+          <a href="#LinkedIn" class="service-item">
+            <div class="service-icon" style="background: #f5f5f5;">
+              <!-- LinkedIn  SVG -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="#0A66C2">
+                    <path d="M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.208 24 24 23.226 24 22.271V1.729C24 .774 23.208 0 22.225 0zM7.069 20.452H3.56V9.004h3.509v11.448zM5.314 7.612c-1.128 0-2.04-.926-2.04-2.067a2.042 2.042 0 1 1 4.081 0c0 1.141-.912 2.067-2.041 2.067zM20.452 20.452h-3.51v-5.588c0-1.332-.028-3.047-1.857-3.047-1.857 0-2.142 1.448-2.142 2.946v5.689h-3.51V9.004h3.37v1.561h.048c.47-.888 1.616-1.823 3.326-1.823 3.556 0 4.211 2.342 4.211 5.386v6.324z"/>
+                </svg>
+            </div>
+            <span class="service-name">LinkedIn</span>
+            <span class="service-tag tag-upcoming">Upcoming</span>
+          </a>
+
+          <a href="#Twitch" class="service-item">
+            <div class="service-icon" style="background: #f5f5f5;">
+              <!-- Twitch SVG -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="#9146FF">
+                <path d="M2.028 0L0 4.289v16.976h5.57V24h3.436l3.44-3.435h5.726L24 16.28V0H2.028zm20.023 14.652l-2.859 2.857h-5.383l-3.44 3.436v-3.436H3.428V1.859h18.622v12.793zM17.596 6.215h-2.15v5.383h2.15V6.215zm-5.33 0H10.12v5.383h2.15V6.215z"/>
+              </svg>                          
+            </div>
+            <span class="service-name">Twitch</span>
+            <span class="service-tag tag-upcoming">Upcoming</span>
+          </a>
+        </div>
+        
+        <button class="slider-arrow next" onclick="slideServices(1)" aria-label="Next services">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+      </section>
+
+    <section class="introduce-our-service">
+        <div class="container">
+             <!-- This will show after production -->
+            <!-- <div class="metrics">
+                <div class="metric primary">★ 15000+</div>
+                <div class="metric">4.8+</div>
+            </div> -->
+    
+            <h1>Boost Your <span>Social Growth</span></h1>
+    
+            <div class="features-card">
+                <div class="feature">Authentic engagement from real users</div>
+                <div class="feature">Flexible packages for all budget sizes</div>
+                <div class="feature">Fast delivery within 24 hours</div>
+                <div class="feature">Best competitive prices in the market</div>
+                <div class="feature">24/7 customer support</div>
+                <div class="feature">Guaranteed account security and privacy</div>
+    
+                <a href="#youtube-pricing-section" class="cta-button">Check Out</a>
+            </div>
+    
+            <div class="info-grid">
+                <div class="info-card">
+                    <h2>Why is Social Growth Important?</h2>
+                    <p>In today's digital landscape, building a strong social media presence is crucial. Higher engagement rates lead to better visibility, increased credibility, and more opportunities for your brand or content.</p>
+                </div>
+                <div class="info-card">
+                    <h2>Benefits of Our Services</h2>
+                    <p>Our platform provides organic growth solutions that help you effectively reach your target audience. We focus on quality engagement that drives real results for your social media success.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- <section id="youtube-pricing-section" class="youtube-pricing-section" style="background-color: #f8f9fa; padding: 60px 20px; font-family: Arial, sans-serif;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+          <div class="pricing-card" style="background: white; border-radius: 10px; padding: 40px; text-align: center;">
+            <h2 style="font-size: 36px; margin-bottom: 30px; color: #000;">Boost YouTube channel</h2>
+            
+            <div class="price-container" style="margin-bottom: 30px;">
+              <span class="price" style="font-size: 32px; color: #ff1a1a; font-weight: bold;">৳4,500.00</span>
+              <a href="#" class="buy-button" style="
+                display: inline-block;
+                background: #000;
+                color: white;
+                padding: 12px 40px;
+                text-decoration: none;
+                border-radius: 25px;
+                margin-left: 20px;
+                font-weight: bold;">Buy now</a>
+            </div>
+      
+            <p style="font-size: 16px; line-height: 1.6; margin-bottom: 40px; color: #333;">
+                Elevate your YouTube success with our <span style="color: #ff1a1a; font-weight: bold;">integrated growth package!</span> Experience the perfect blend of 
+              <span style="color: #ff1a1a; font-weight: bold;">increased views</span>, 
+              expanded subscriber base, and enhanced engagement - all in one cost-effective solution.
+            </p>
+      
+            <div class="features-grid" style="
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 30px;
+              max-width: 600px;
+              margin: 0 auto;">
+              
+              <div class="feature">
+                <h3 style="font-size: 48px; color: #ff1a1a; margin: 0;">5000</h3>
+                <p style="color: #333; margin-top: 10px;">Views for<br>chosen video</p>
+              </div>
+      
+              <div class="feature">
+                <h3 style="font-size: 48px; color: #ff1a1a; margin: 0;">1000</h3>
+                <p style="color: #333; margin-top: 10px;">Likes for<br>chosen video</p>
+              </div>
+      
+              <div class="feature">
+                <h3 style="font-size: 48px; color: #ff1a1a; margin: 0;">100</h3>
+                <p style="color: #333; margin-top: 10px;">New active<br>subscribers at once</p>
+              </div>
+      
+              <div class="feature">
+                <h3 style="font-size: 48px; color: #ff1a1a; margin: 0;">24/7</h3>
+                <p style="color: #333; margin-top: 10px;">Customers<br>Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+
+    <section class="tiktok-section">
+        <div class="tiktok-container">
+             <!-- This will show after production -->
+            <!-- <div class="rating-badge">
+                <span class="rating-item">
+                    <svg width="16" height="16" fill="#00a884" viewBox="0 0 16 16">
+                        <path d="M8 0l2.5 5 5.5.8-4 3.9 1 5.3L8 12.5 3 15l1-5.3-4-3.9 5.5-.8z"/>
+                    </svg>
+                    4350+
+                </span>
+                <span class="rating-item">4.9+</span>
+            </div> -->
+    
+            <h1 class="main-title">
+                Enhance Your TikTok <span class="highlight">Presence</span>
+            </h1>
+    
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="checkmark">✓</span>
+                    <span>Premium quality engagement from real accounts</span>
+                </div>
+                <div class="feature-item">
+                    <span class="checkmark">✓</span>
+                    <span>Flexible packages from 50 to 50,000 authentic followers</span>
+                </div>
+                <div class="feature-item">
+                    <span class="checkmark">✓</span>
+                    <span>Swift and reliable delivery system</span>
+                </div>
+                <div class="feature-item">
+                    <span class="checkmark">✓</span>
+                    <span>Industry-leading rates with premium quality</span>
+                </div>
+                <div class="feature-item">
+                    <span class="checkmark">✓</span>
+                    <span>Enhanced security protocols for safe transactions</span>
+                </div>
+                <div class="feature-item">
+                    <span class="checkmark">✓</span>
+                    <span>Round-the-clock customer assistance</span>
+                </div>
+            </div>
+    
+            <button class="cta-button">Boost Your TikTok Today</button>
+    
+            <div class="info-grid">
+                <div class="info-card">
+                    <h2 class="info-title">The Power of TikTok Growth</h2>
+                    <p class="info-text">
+                        In today's digital landscape, TikTok stands as a powerhouse of social media influence. A strong follower base is crucial for content creators and brands alike. With an expanded audience, you'll unlock new opportunities for engagement, collaboration, and brand partnerships. Your content's reach and impact grow exponentially with each new authentic follower, creating a snowball effect of organic growth and increased visibility.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <h2 class="info-title">Benefits of Building Your Audience</h2>
+                    <p class="info-text">
+                        Accelerate your TikTok journey with our premium follower enhancement service. Watch as your content reaches wider audiences, triggering TikTok's algorithm to showcase your videos to more viewers. A larger follower base naturally attracts organic growth, as users are more likely to engage with popular accounts. Build credibility and establish your presence in the TikTok community with authentic audience growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <img src="images/tik_tok_3d.webp" alt="TikTok Logo" class="tiktok-logo">
+    </section>
+
+    <section class="yt-boost-section">
+        <div class="yt-boost-container">
+            <!-- This will show after production -->
+            <!-- <div class="yt-stats-badge">
+                <span class="yt-stat-item">
+                    <svg width="16" height="16" fill="#00a884" viewBox="0 0 16 16">
+                        <path d="M8 0l2.5 5 5.5.8-4 3.9 1 5.3L8 12.5 3 15l1-5.3-4-3.9 5.5-.8z"/>
+                    </svg>
+                    10570+
+                </span>
+                <span class="yt-stat-item">4.9+</span>
+            </div> -->
+    
+            <h1 class="yt-main-title">
+                Amplify Your YouTube <span class="yt-highlight">Views</span>
+            </h1>
+    
+            <div class="yt-features-list">
+                <div class="yt-feature-item">
+                    <span class="yt-checkmark">✓</span>
+                    <span>Authentic viewer engagement from active users</span>
+                </div>
+                <div class="yt-feature-item">
+                    <span class="yt-checkmark">✓</span>
+                    <span>Flexible packages ranging from 100 to 75,000 views</span>
+                </div>
+                <div class="yt-feature-item">
+                    <span class="yt-checkmark">✓</span>
+                    <span>Rapid delivery timeframe</span>
+                </div>
+                <div class="yt-feature-item">
+                    <span class="yt-checkmark">✓</span>
+                    <span>Market-leading competitive rates</span>
+                </div>
+                <div class="yt-feature-item">
+                    <span class="yt-checkmark">✓</span>
+                    <span>24/7 dedicated support team</span>
+                </div>
+                <div class="yt-feature-item">
+                    <span class="yt-checkmark">✓</span>
+                    <span>Maximize your channel's growth potential</span>
+                </div>
+            </div>
+    
+            <button class="yt-cta-button">Boost Your YouTube Today</button>
+    
+            <div class="yt-info-grid">
+                <div class="yt-info-card">
+                    <h2 class="yt-info-title">The Impact of Video Views</h2>
+                    <p class="yt-info-text">
+                        Video views serve as a powerful social proof metric in the YouTube ecosystem. When viewers discover content with substantial view counts, they're naturally drawn to explore what makes it compelling. This increased visibility creates a positive feedback loop, encouraging YouTube's algorithm to showcase your content more frequently, potentially reaching broader audiences and creating opportunities for sustained channel growth.
+                    </p>
+                </div>
+                <div class="yt-info-card">
+                    <h2 class="yt-info-title">Strategic Benefits of View Enhancement</h2>
+                    <p class="yt-info-text">
+                        Elevate your content's visibility through strategic view enhancement. Higher view counts can significantly boost your video's discovery potential, making it more likely to appear in recommendations and search results. This increased exposure often leads to organic growth in subscribers, likes, and community engagement. Whether you're building a brand or growing your influence, enhanced view counts can accelerate your YouTube success journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <img src="images/youtube_groupe_logo_3d_png.webp" alt="YouTube Logo" class="yt-logo">
+    </section>
+
+    <section class="fb-boost-section">
+        <div class="fb-boost-container">
+             <!-- This will show after production -->
+            <!-- <div class="fb-stats-badge">
+                <span class="fb-stat-item">
+                    <svg width="16" height="16" fill="#4267B2" viewBox="0 0 16 16">
+                        <path d="M8 0l2.5 5 5.5.8-4 3.9 1 5.3L8 12.5 3 15l1-5.3-4-3.9 5.5-.8z"/>
+                    </svg>
+                    20500+
+                </span>
+                <span class="fb-stat-item">4.8+</span>
+            </div> -->
+    
+            <h1 class="fb-main-title">
+                Elevate Your Facebook <span class="fb-highlight">Engagement</span>
+            </h1>
+    
+            <div class="fb-features-list">
+                <div class="fb-feature-item">
+                    <span class="fb-checkmark">✓</span>
+                    <span>Real interactions from global audiences</span>
+                </div>
+                <div class="fb-feature-item">
+                    <span class="fb-checkmark">✓</span>
+                    <span>Customizable engagement packages</span>
+                </div>
+                <div class="fb-feature-item">
+                    <span class="fb-checkmark">✓</span>
+                    <span>Timely results for campaigns</span>
+                </div>
+                <div class="fb-feature-item">
+                    <span class="fb-checkmark">✓</span>
+                    <span>Affordable and effective solutions</span>
+                </div>
+                <div class="fb-feature-item">
+                    <span class="fb-checkmark">✓</span>
+                    <span>Round-the-clock customer support</span>
+                </div>
+                <div class="fb-feature-item">
+                    <span class="fb-checkmark">✓</span>
+                    <span>Boost your profile's credibility</span>
+                </div>
+            </div>
+    
+            <button class="fb-cta-button">Enhance Your Facebook Now</button>
+    
+            <div class="fb-info-grid">
+                <div class="fb-info-card">
+                    <h2 class="fb-info-title">The Power of Facebook Engagement</h2>
+                    <p class="fb-info-text">
+                        Engagement on Facebook plays a pivotal role in reaching your target audience. High levels of interaction can attract more users to your page and content, fostering a sense of community and encouraging algorithmic prioritization.
+                    </p>
+                </div>
+                <div class="fb-info-card">
+                    <h2 class="fb-info-title">Why Choose Engagement Boosting</h2>
+                    <p class="fb-info-text">
+                        Boosting your Facebook engagement helps maximize your content's visibility. It draws more organic interactions, enhances your brand presence, and builds trust with your audience, propelling your success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <img src="images/facebook_3d_png.webp" alt="Facebook Logo" class="fb-logo">
+        <img src="images/facebook_logo_3d_png.webp" alt="Facebook Logo" class="fb-logo fb-logo2">
+    </section>
+
+    <section class="guarantee-section" style="padding: 60px 20px; font-family: Arial, sans-serif;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+          <h2 style="font-size: 36px; margin-bottom: 40px; color: #000;">
+            Roovix SocialBoost's Commitment to Your Social Media Success
+          </h2>
+      
+          <div class="guarantee-content" style="margin-bottom: 40px;">
+            <p style="font-size: 16px; line-height: 1.8; margin-bottom: 30px; color: #333;">
+              We understand the effort you invest in creating engaging content across various social media platforms. Roovix SocialBoost is dedicated to amplifying your online presence. Our comprehensive services ensure your exceptional content reaches its intended audience, boosting your profile's visibility and engagement across all major social networks.
+            </p>
+      
+            <p style="font-size: 16px; line-height: 1.8; color: #333;">
+              Our satisfied clients consistently rely on our social media enhancement services to elevate their online profiles. By partnering with us, they ensure each post, tweet, or update achieves maximum reach and engagement, regardless of the platform.
+            </p>
+          </div>
+      
+          <div class="feature-card" style="
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 40px;
+            margin-top: 60px;
+            position: relative;">
+            
+            <div class="icon" style="
+              position: absolute;
+              top: -30px;
+              left: 40px;
+              width: 60px;
+              height: 60px;
+              background: #ff1a1a;
+              border-radius: 8px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              transform: perspective(100px) rotateX(10deg) rotateY(-10deg);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+      
+            <h3 style="font-size: 24px; margin-bottom: 20px; color: #000; padding-top: 20px;">
+              Tailored Audience Targeting for Optimal Profile Growth
+            </h3>
+      
+            <p style="font-size: 16px; line-height: 1.8; color: #333;">
+              When you choose our services, simply provide your social media profile links. Our advanced analytics system will evaluate your current audience demographics and engagement patterns across all platforms. We then implement a strategic targeting approach, ensuring increased visibility and interaction from users who align perfectly with your content and brand. This personalized strategy maximizes the impact of our services on your overall social media success, boosting your presence across every platform you use.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="social-media-tools" class="social-media-tools">
+        <h2 class="tools-header">Social Media <span>Tools</span></h2>
+        <div class="tool-cards">
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <!-- Calculator icon -->
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#833AB4">
+                        <rect x="3" y="2" width="18" height="20" rx="3" ry="3" />
+                        <rect x="7" y="6" width="10" height="2" rx="1" ry="1" fill="#FFFFFF" />
+                        <rect x="7" y="10" width="4" height="4" rx="1" ry="1" />
+                        <rect x="13" y="10" width="4" height="4" rx="1" ry="1" />
+                        <rect x="7" y="16" width="4" height="4" rx="1" ry="1" />
+                        <rect x="13" y="16" width="4" height="4" rx="1" ry="1" />
+                      </svg>                      
+                </div>
+                <h3 class="tool-title">YouTube Revenue Estimator</h3>
+                <p class="tool-description">
+                    Estimate your potential YouTube earnings by pasting your channel URL into the tool. It calculates metrics such as views, watch time, and engagement to provide accurate insights.
+                </p>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <!-- Analytics icon -->
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#833AB4">
+                        <rect x="3" y="2" width="18" height="20" rx="3" ry="3" />
+                        <rect x="6" y="14" width="3" height="6" fill="#FFFFFF" />
+                        <rect x="10" y="10" width="3" height="10" fill="#FFFFFF" />
+                        <rect x="14" y="6" width="3" height="14" fill="#FFFFFF" />
+                      </svg>                      
+                </div>
+                <h3 class="tool-title">YouTube Channel Insights</h3>
+                <p class="tool-description">
+                    Dive deep into audience demographics and discover which videos resonate most with your viewers. This tool helps enhance your channel's performance by providing actionable analytics.
+                </p>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <!-- Rank tracker icon -->
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#833AB4">
+                        <rect x="3" y="2" width="18" height="20" rx="3" ry="3" />
+                        <path d="M6 17h4v2H6zm8-6h4v2h-4zM8 11l2 2 4-4 4 4v2H6v-4z" fill="#FFFFFF" />
+                      </svg>                      
+                </div>
+                <h3 class="tool-title">YouTube SEO Tracker</h3>
+                <p class="tool-description">
+                    Optimize your channel's search rankings by tracking video performance and keyword analytics. Boost your visibility and stay ahead of the competition effortlessly.
+                </p>
+            </div>
+        </div>
+      </section>    
+
+    <section class="cta-section" style="background: linear-gradient(to bottom, #ff3366, #ff3366, white);">
+        <div class="container">
+            <h2>Ready to Skyrocket Your Social Media?</h2>
+            <p>Join thousands of satisfied customers and see the difference today!</p>
+            <a href="#" class="pink-cta-button">Get Started Now</a>
+        </div>
+    </section>
+
+    <footer>
+        <iframe 
+            id="dynamic-iframe" 
+            src="footer_com.html" 
+            width="100%" 
+            frameborder="0" 
+            scrolling="no" 
+            style="border: 0; overflow: hidden;">
+        </iframe>
+    </footer>
+    
+    <!-- Footer script -->
+     <script>
+        // Footer JavaScript
+        // Adjust iframe height based on its content
+        const iframe = document.getElementById('dynamic-iframe');
+        iframe.addEventListener('load', () => {
+            try {
+                // Get the content height from the iframe's document
+                const iframeContentHeight = iframe.contentWindow.document.body.scrollHeight;
+                iframe.style.height = `${iframeContentHeight}px`;
+            } catch (error) {
+                console.error('Unable to access iframe content for height adjustment:', error);
+            }
+        });
+     </script>
+
+    <!-- Nav bar responsive for phone screen -->
+    <script>
+        // Nav bar responsive for phone screen
+        const nav_toggle = document.querySelector('#nav_toggle');
+        const nav_links = document.querySelector('.nav-links');
+        const nav_toggle_icon = document.querySelector('#nav_toggle_icon');
+
+        nav_toggle.addEventListener('click', () => {
+            if (nav_links.style.display === 'flex') {
+                nav_links.style.display = 'none';
+                nav_toggle_icon.classList.remove('fa-xmark');
+                nav_toggle_icon.classList.add('fa-bars-staggered');
+            } else {
+                nav_links.style.display = 'flex';
+                nav_toggle_icon.classList.add('fa-xmark');
+                nav_toggle_icon.classList.remove('fa-bars-staggered');
+            }
+        });
+    </script>
+
+    <!-- Script for service slider -->
+     <script src="scripts/service_slider.js"></script>
+</body>
+</html>
