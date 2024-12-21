@@ -766,6 +766,18 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .yt-logo {
+        top: 90px;
+        right: -100px;
+        rotate: 90deg;
+    }
+    .tiktok-logo {
+        top: 50px;
+        right: -80px;
+        rotate: 70deg;
+    }
+}
+@media (max-width: 768px) {
     .introduce-our-service h1 {
         font-size: 2.5rem;
     }
