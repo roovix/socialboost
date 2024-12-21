@@ -19,7 +19,7 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo"><img src="images/logo.png" alt="Roovix Social Boost Logo"><span>SkyRocket</span></div>
+                <div onclick="openSkyRocket()" class="logo"><img src="images/logo.png" alt="Roovix Social Boost Logo"><span>SkyRocket</span></div>
                 <button id="nav_toggle"><i id="nav_toggle_icon" class="fa-solid fa-bars-staggered"></i></button>
                 <div class="nav-links">
                     <a href="#services">Boost Social Engagement</a>
@@ -590,6 +590,14 @@
             }
         });
     </script>
+
+    
+    <!-- open root page -->
+     <script>
+        function openSkyRocket() {
+          window.location.href = "/";
+        }
+     </script>
 
     <!-- Script for service slider -->
      <script src="scripts/service_slider.js"></script>
