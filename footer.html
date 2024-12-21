@@ -43,7 +43,6 @@
         }
         .footer-logo img {
             width: 80px;
-            margin-bottom: 10px;
         }
         .footer-logo span {
             color: #FF5D6A;
@@ -121,18 +120,19 @@
         <div class="footer-content">
             <div class="footer-section">
                 <div class="footer-logo">
-                    <img src="images/roovix buy social followers logo.png" alt="logo">
-                    <span>Roovix SocialBoost</span>
+                    <img src="images/logo.png" alt="logo">
+                    <span>Roovix SkyRocket</span>
                 </div>
                 <p class="footer-description">
                     Elevate your content's reach and engagement with our premium services. 
                     We help creators achieve their goals through authentic engagement.
                 </p>
-                <div class="footer-contact">                    <p><a href="https://youtube.com/@roovix"><i class="fa-brands fa-youtube"></i> YouTube</a></p>
-                    <p><a href="https://youtube.com/@roovix"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+                <div class="footer-contact">
+                    <p style="cursor: pointer;" onclick="openComYoutube()"><a><i class="fa-brands fa-youtube"></i> YouTube</a></p>
+                    <p style="cursor: pointer;" onclick="openComFacebook()"><a><i class="fa-brands fa-facebook"></i> Facebook</a></p>
                     <p><i class="fa-solid fa-location-dot"></i> Nagarpur, Tangail, Dhaka</p>
                     <p><i class="fa-solid fa-phone"></i> +88 019 0818 0351</p>
-                    <p><i class="fa-solid fa-envelope"></i> socialboost@roovix.com</p>
+                    <p><i class="fa-solid fa-envelope"></i> skyrocket@roovix.com</p>
                     <p><i class="fa-solid fa-envelope"></i> official@roovix.com</p>
                 </div>
             </div>
@@ -175,5 +175,14 @@
             <p>&copy; 2024 Roovix SocialBoost - All Rights Reserved | Empowering Digital Creators</p>
         </div>
     </footer>
+
+    <script>
+        function openComYoutube() {
+            window.open('https://youtube.com/@roovix', '_blank');
+        }
+        function openComFacebook() {
+            window.open('https://facebook.com/roovixx', '_blank');
+        }
+    </script>
 </body>
 </html>
