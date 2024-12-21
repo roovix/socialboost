@@ -47,6 +47,7 @@ nav {
 }
 
 .logo {
+    cursor: pointer;
     font-size: 24px;
     font-weight: 600;
     color: #ff3366;
