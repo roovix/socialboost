@@ -450,10 +450,10 @@ nav {
 
 .tiktok-logo {
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: -100px;
     transform: translateY(-50%);
-    width: 400px;
+    width: 800px;
     opacity: 0.9;
 }
 
@@ -583,10 +583,11 @@ nav {
 
 .yt-logo {
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: -100px;
     transform: translateY(-50%);
-    width: 400px;
+    rotate: 45deg;
+    width: 800px;
     opacity: 0.9;
 }
 
@@ -716,11 +717,14 @@ nav {
 
 .fb-logo {
     position: absolute;
-    top: 50%;
+    top: 35%;
     right: -100px;
     transform: translateY(-50%);
-    width: 400px;
+    width: 800px;
     opacity: 0.9;
+}
+.fb-logo2 {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -765,16 +769,36 @@ nav {
     }
 }
 
+@media (max-width: 1080px) {
+    .fb-logo {
+        width: 600px;
+    }
+}
 @media (max-width: 768px) {
     .yt-logo {
         top: 90px;
         right: -100px;
         rotate: 90deg;
+        width: 400px;
     }
     .tiktok-logo {
         top: 50px;
         right: -80px;
         rotate: 70deg;
+        width: 400px;
+    }
+    .fb-logo {
+        top: 40%;
+        rotate: 180deg;
+        transform: rotateX(180deg);
+        width: 400px;
+    }
+    .fb-logo2 {
+        display: block;
+        width: 250px;
+        top: 10px;
+        opacity: 0.5;
+        filter: blur(1px);
     }
 }
 @media (max-width: 768px) {
