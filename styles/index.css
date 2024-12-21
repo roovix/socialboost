@@ -341,7 +341,8 @@ nav {
     font-family: Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin: 30px;
+    margin-top: 30px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -472,7 +473,7 @@ nav {
     font-family: Arial, sans-serif;
     position: relative;
     overflow: hidden;
-    margin: 10px;
+    margin: 30px;
     margin-top: 30px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -605,8 +606,8 @@ nav {
     font-family: Arial, sans-serif;
     position: relative;
     overflow: hidden;
+    margin: 30px;
     margin-top: 30px;
-    margin: 10px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -770,5 +771,11 @@ nav {
 
     .introduce-our-service .info-grid {
         grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 1340px) {
+    .fb-boost-section, .yt-boost-section, .tiktok-section{
+        margin: 10px;
+        margin-top: 30px;
     }
 }
