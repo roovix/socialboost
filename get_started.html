@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Started - Roovix SkyRocket</title>
+
+    <!-- link to font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link to css -->
+    <link rel="stylesheet" href="styles/get_started.css" />
+    <link rel="stylesheet" href="styles/youtube_pricing_section.css" />
+    <link rel="stylesheet" href="styles/service_slider.css" />
+    <link rel="stylesheet" href="styles/select_platform.css">
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <nav>
+          <div class="logo">
+            <img src="images/logo.png" alt="Roovix Social Boost Logo" /><span
+              >SkyRocket</span
+            >
+          </div>
+          <button id="nav_toggle">
+            <i id="nav_toggle_icon" class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="nav-links">
+            <a href="/">Home</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Dropdown for change platform start -->
+    <section id="select_platform">
+    <div class="select-container">
+        <div class="select-header">
+            <div class="selected-option">
+                <img src="images/youtube_logo.webp" alt="Fox">
+                <span>YouTube</span>
+            </div>
+            <span class="arrow"></span>
+        </div>
+        <div class="dropdown">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+            <div class="options">
+                <div class="option" data-value="fox">
+                    <img src="images/youtube_png.webp" alt="Fox">
+                    <span>YouTube</span>
+                </div>
+                <div class="option" data-value="fox">
+                    <img src="images/facebook_png.png" alt="Fox">
+                    <span>Facebook</span>
+                </div>
+                <div class="option" data-value="fox">
+                    <img src="images/tiktok_png.png" alt="Fox">
+                    <span>TikTok</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- Dropdown for change platform end -->
+
+    <!-- Youtube packaging section -->
+     <section id="youtube_pricing_section">
+        <section class="container">
+            <p class="header-text">
+              <img src="images/youtube_logo.webp" />
+              <span>Get Started for YouTube</span>
+            </p>
+      
+            <div class="slider-container">
+              <button class="nav-button prev" disabled>
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <div class="slider-wrapper">
+                <div class="slider">
+                  <div class="package" data-index="0">
+                    <div class="package-content">
+                      <div class="subs-number">20</div>
+                      <div class="subs-text">subs.</div>
+                      <div class="price">free</div>
+                    </div>
+                  </div>
+                  <div class="package" data-index="1">
+                    <div class="package-content">
+                      <div class="subs-number">100</div>
+                      <div class="subs-text">subs.</div>
+                      <div class="original-price">$6.90</div>
+                      <div class="price">$3.90</div>
+                      <div class="save-badge">save 43%</div>
+                    </div>
+                  </div>
+                  <div class="package" data-index="2">
+                    <div class="package-content">
+                      <div class="subs-number">250</div>
+                      <div class="subs-text">subs.</div>
+                      <div class="original-price">$19.90</div>
+                      <div class="price">$9.50</div>
+                      <div class="save-badge">save 52%</div>
+                    </div>
+                  </div>
+                  <div class="package" data-index="3">
+                    <div class="package-content">
+                      <div class="subs-number">500</div>
+                      <div class="subs-text">subs.</div>
+                      <div class="original-price">$36.90</div>
+                      <div class="price">$16.90</div>
+                      <div class="save-badge">save 54%</div>
+                    </div>
+                  </div>
+                  <div class="package" data-index="4">
+                    <div class="package-content">
+                      <div class="subs-number">1000</div>
+                      <div class="subs-text">subs.</div>
+                      <div class="original-price">$69.90</div>
+                      <div class="price">$31.00</div>
+                      <div class="save-badge">save 56%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="nav-button next">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+      
+            <button class="buy-now">Buy Subscribers</button>
+            <div class="error-message">Please, select a package</div>
+      
+            <div class="features">
+              <div class="feature">Real & Organic Subscribers</div>
+              <div class="feature">Refill Guaranteed</div>
+              <div class="feature">No drops</div>
+              <div class="feature">Privacy and safety</div>
+            </div>
+          </section>
+      
+          <section
+            id="youtube-pricing-section"
+            style="
+              background-color: #f8f9fa;
+              padding: 60px 20px;
+              font-family: Arial, sans-serif;
+            "
+          >
+            <div style="max-width: 800px; margin: 0 auto">
+              <div
+                style="
+                  background: white;
+                  border-radius: 10px;
+                  padding: 40px;
+                  text-align: center;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                "
+              >
+                <h2 style="font-size: 36px; margin-bottom: 30px; color: #000">
+                  Channel Boost
+                </h2>
+      
+                <div style="margin-bottom: 30px">
+                  <span style="font-size: 32px; color: #ff1a1a; font-weight: bold"
+                    >৳4,500.00</span
+                  >
+                  <a
+                    href="#"
+                    style="
+                      display: inline-block;
+                      background: #000;
+                      color: white;
+                      padding: 12px 40px;
+                      text-decoration: none;
+                      border-radius: 25px;
+                      margin-left: 20px;
+                      font-weight: bold;
+                      transition: background 0.3s;
+                    "
+                    onmouseover="this.style.background='#ff1a1a'"
+                    onmouseout="this.style.background='#000'"
+                    >Boost now</a
+                  >
+                </div>
+      
+                <p
+                  style="
+                    font-size: 16px;
+                    line-height: 1.6;
+                    margin-bottom: 40px;
+                    color: #333;
+                  "
+                >
+                  Elevate your YouTube success with our
+                  <span style="color: #ff1a1a; font-weight: bold"
+                    >integrated growth package!</span
+                  >
+                  Experience the perfect blend of
+                  <span style="color: #ff1a1a; font-weight: bold"
+                    >increased views</span
+                  >, expanded subscriber base, and enhanced engagement - all in one
+                  cost-effective solution.
+                </p>
+      
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 30px;
+                    max-width: 600px;
+                    margin: 0 auto;
+                  "
+                >
+                  <div>
+                    <h3 style="font-size: 48px; color: #ff1a1a; margin: 0">5000</h3>
+                    <p style="color: #333; margin-top: 10px">
+                      Views for<br />chosen video
+                    </p>
+                  </div>
+      
+                  <div>
+                    <h3 style="font-size: 48px; color: #ff1a1a; margin: 0">1000</h3>
+                    <p style="color: #333; margin-top: 10px">
+                      Likes for<br />chosen video
+                    </p>
+                  </div>
+      
+                  <div>
+                    <h3 style="font-size: 48px; color: #ff1a1a; margin: 0">100</h3>
+                    <p style="color: #333; margin-top: 10px">
+                      New active<br />subscribers at once
+                    </p>
+                  </div>
+      
+                  <div>
+                    <h3 style="font-size: 48px; color: #ff1a1a; margin: 0">24/7</h3>
+                    <p style="color: #333; margin-top: 10px">
+                      Customers<br />Support
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+     </section>
+
+    <!-- Section where display other platform data -->
+    <section id="show_platform">
+        No platform here
+    </section> 
+
+    <footer>
+      <iframe
+        id="dynamic-iframe"
+        src="footer_com.html"
+        width="100%"
+        frameborder="0"
+        scrolling="no"
+        style="border: 0; overflow: hidden"
+      >
+      </iframe>
+    </footer>
+
+    <!-- Footer script -->
+    <script>
+      // Footer JavaScript
+      // Adjust iframe height based on its content
+      const iframe = document.getElementById("dynamic-iframe");
+      iframe.addEventListener("load", () => {
+        try {
+          // Get the content height from the iframe's document
+          const iframeContentHeight =
+            iframe.contentWindow.document.body.scrollHeight;
+          iframe.style.height = `${iframeContentHeight}px`;
+        } catch (error) {
+          console.error(
+            "Unable to access iframe content for height adjustment:",
+            error
+          );
+        }
+      });
+    </script>
+
+    <!-- Nav bar responsive for phone screen -->
+    <script>
+      // Nav bar responsive for phone screen
+      const nav_toggle = document.querySelector("#nav_toggle");
+      const nav_links = document.querySelector(".nav-links");
+      const nav_toggle_icon = document.querySelector("#nav_toggle_icon");
+
+      nav_toggle.addEventListener("click", () => {
+        if (nav_links.style.display === "flex") {
+          nav_links.style.display = "none";
+          nav_toggle_icon.classList.remove("fa-xmark");
+          nav_toggle_icon.classList.add("fa-bars-staggered");
+        } else {
+          nav_links.style.display = "flex";
+          nav_toggle_icon.classList.add("fa-xmark");
+          nav_toggle_icon.classList.remove("fa-bars-staggered");
+        }
+      });
+    </script>
+
+    <!-- Pricing script -->
+    <script>
+      const slider = document.querySelector(".slider");
+      const prevBtn = document.querySelector(".prev");
+      const nextBtn = document.querySelector(".next");
+      const sliderWrapper = document.querySelector(".slider-wrapper");
+      const packages = document.querySelectorAll(".package");
+      const buyNowButton = document.querySelector(".buy-now");
+      const errorMessage = document.querySelector(".error-message");
+
+      let scrollAmount = 0;
+      const step = sliderWrapper.offsetWidth;
+      const maxScroll = slider.scrollWidth - sliderWrapper.offsetWidth;
+
+      let isPackageClicked = false; // Flag to prevent scrolling when selecting a package
+
+      function updateButtons() {
+        prevBtn.disabled = scrollAmount === 0;
+        nextBtn.disabled = scrollAmount >= maxScroll;
+      }
+
+      nextBtn.addEventListener("click", () => {
+        if (!isPackageClicked && scrollAmount < maxScroll) {
+          scrollAmount += step;
+          if (scrollAmount > maxScroll) scrollAmount = maxScroll;
+          slider.style.transform = `translateX(-${scrollAmount}px)`;
+          updateButtons();
+        }
+      });
+
+      prevBtn.addEventListener("click", () => {
+        if (!isPackageClicked && scrollAmount > 0) {
+          scrollAmount -= step;
+          if (scrollAmount < 0) scrollAmount = 0;
+          slider.style.transform = `translateX(-${scrollAmount}px)`;
+          updateButtons();
+        }
+      });
+
+      // Package selection logic
+      packages.forEach((pkg) => {
+        pkg.addEventListener("click", (e) => {
+          e.stopPropagation(); // Stop event propagation
+          e.preventDefault(); // Prevent any default behavior
+
+          // Remove 'selected' class from all packages
+          packages.forEach((p) => p.classList.remove("selected"));
+
+          // Add 'selected' class to the clicked package
+          pkg.classList.add("selected");
+
+          // Hide error message
+          errorMessage.style.display = "none";
+
+          // Prevent auto-scroll temporarily
+          isPackageClicked = true;
+          setTimeout(() => {
+            isPackageClicked = false;
+          }, 500);
+        });
+      });
+
+      // Buy Now button logic
+      buyNowButton.addEventListener("click", () => {
+        const selectedPackage = document.querySelector(".package.selected");
+        if (selectedPackage) {
+          alert(
+            "Package selected: " +
+              selectedPackage.querySelector(".subs-number").textContent +
+              " subs."
+          );
+          errorMessage.style.display = "none";
+        } else {
+          errorMessage.style.display = "block";
+        }
+      });
+    </script>
+
+    <!-- Select platform js -->
+     <script src="scripts/select_platform.js"></script>
+  </body>
+</html>
